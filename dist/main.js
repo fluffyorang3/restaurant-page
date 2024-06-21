@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/homepage.js":
+/*!*************************!*\
+  !*** ./src/homepage.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _assets_image_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/image.png */ \"./src/assets/image.png\");\n\n\nconst home = function totalHome() {\n    let title, image, description, div;\n\n    function homeCreator() {\n        title = document.createElement(\"h1\")\n        image = document.createElement(\"img\")\n        description = document.createElement(\"h3\")\n        div = document.getElementById('content')\n    }\n    \n    function homeContentAdder() {\n        homeCreator()\n        title.textContent = \"This is a restaurant page\"\n        image.src = _assets_image_png__WEBPACK_IMPORTED_MODULE_0__;\n        description.textContent = `Welcome to our restaurant, where fresh ingredients and \n                diverse flavors create a delightful dining experience. \n                Enjoy our carefully crafted dishes, extensive wine list, \n                and signature cocktails in a warm, inviting atmosphere. \n                Perfect for any occasion, our restaurant promises \n                exceptional cuisine and attentive service.`\n    }\n    \n    function homeAppender() {\n        div.appendChild(title)\n        div.appendChild(image)\n        div.appendChild(description)\n    }\n    \n    function home() {\n        homeContentAdder();\n        homeAppender();\n    }\n    \n    return home();\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/homepage.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_image_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/image.png */ \"./src/assets/image.png\");\n\n\nconsole.log(\"Testtt\")\n\nconst restImg = document.getElementById(\"restImg\")\n\nrestImg.src = _assets_image_png__WEBPACK_IMPORTED_MODULE_0__;\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepage.js */ \"./src/homepage.js\");\n\n\n(0,_homepage_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -57,6 +67,18 @@ eval("module.exports = __webpack_require__.p + \"image.png\";\n\n//# sourceURL=w
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -67,6 +89,11 @@ eval("module.exports = __webpack_require__.p + \"image.png\";\n\n//# sourceURL=w
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */

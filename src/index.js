@@ -1,7 +1,4 @@
-import img from './assets/image.png'
+import home from './homepage.js';
 
-console.log("Testtt")
+home();
 
-const restImg = document.getElementById("restImg")
-
-restImg.src = img;
