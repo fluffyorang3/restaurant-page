@@ -8,8 +8,12 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/i,  // Corrected typo in the regex pattern for jpg
         type: 'asset/resource',
-      }
-    ]
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
   },
   entry: './src/index.js',
   output: {
